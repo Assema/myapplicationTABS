@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MiniProjet/MiniProjet.iml" filepath="$PROJECT_DIR$/../MiniProjet/MiniProjet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TDM_2016-master - Copie.iml" filepath="$PROJECT_DIR$/../TDM_2016-master - Copie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fragmentsimplemodule/fragmentsimplemodule.iml" filepath="$PROJECT_DIR$/../fragmentsimplemodule/fragmentsimplemodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myapplicationBar/myapplicationBar.iml" filepath="$PROJECT_DIR$/../myapplicationBar/myapplicationBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myapplicationDrawer/myapplicationDrawer.iml" filepath="$PROJECT_DIR$/../myapplicationDrawer/myapplicationDrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myapplicationStyle/myapplicationStyle.iml" filepath="$PROJECT_DIR$/../myapplicationStyle/myapplicationStyle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplicationTABS.iml" filepath="$PROJECT_DIR$/myapplicationTABS.iml" />
+    </modules>
+  </component>
+</project>

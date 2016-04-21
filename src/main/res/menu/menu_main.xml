@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.toshiba.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/spinner"
+        app:showAsAction="always"
+        android:title="Filter"
+        app:actionViewClass="android.widget.Spinner" />
+
+    <item android:id="@+id/panier"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_action_shopping_cart"
+        android:title="Panier"
+                                     />
+
+    <item android:id="@+id/notification"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_toggle_star"
+        android:title="Notification"
+                                     />
+</menu>

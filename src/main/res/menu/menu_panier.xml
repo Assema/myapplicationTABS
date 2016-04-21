@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context="com.example.toshiba.myapplication.activity_panier">
+
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_retour"
+        android:icon="@drawable/ic_action_av_fast_rewind"
+        android:title="action_retour"
+        app:showAsAction ="always"
+        />
+
+    <item android:id="@+id/notification"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_toggle_star"
+        android:title="Notification"
+        />
+</menu>
