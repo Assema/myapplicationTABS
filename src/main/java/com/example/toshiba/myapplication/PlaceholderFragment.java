@@ -97,7 +97,7 @@ public class PlaceholderFragment extends Fragment
         MenuItem item =menu.findItem(R.id.spinner);
         spinner= (Spinner) item.getActionView();
 
-        MenuItem item2 =menu.findItem(R.id.myswitch);
+       // MenuItem item2 =menu.findItem(R.id.myswitch);
 
         switchAB = (SwitchCompat) menu.findItem(R.id.myswitch)
                 .getActionView().findViewById(R.id.switchForActionBar);
@@ -195,7 +195,7 @@ public class PlaceholderFragment extends Fragment
             if(id==R.id.notification)
             {
 
-                if (item.getTitle().equals("ON")) {
+                if (item.getTitle().equals("Notification ON")) {
 
                     Toast.makeText(getActivity(), "Les notifications sont activées ", Toast.LENGTH_SHORT).show();
                 }
