@@ -1,39 +1,35 @@
 package com.example.toshiba.myapplication;
 
-import java.util.List;
+import java.util.Date;
+
 
 public class Commande {
+    private int NumCmd;
+    private Date DateCmd;
+    private String Etat;
 
-    List<Produit> ListeProduit;
-    String etat;
-    float totale;
-
-
-    public Commande() {
-
+    public void setNumCmd(int numCmd) {
+        NumCmd = numCmd;
     }
 
-    public List<Produit> getListeProduit() {
-        return ListeProduit;
-    }
-
-    public void setListeProduit(List<Produit> listeProduit) {
-        ListeProduit = listeProduit;
-    }
-
-    public String getEtat() {
-        return etat;
+    public void setDateCmd(Date dateCmd) {
+        DateCmd = dateCmd;
     }
 
     public void setEtat(String etat) {
-        this.etat = etat;
+        Etat = etat;
     }
 
-    public float getTotale() {
-        return totale;
+    public int getNumCmd() {
+
+        return NumCmd;
     }
 
-    public void setTotale(float totale) {
-        this.totale = totale;
+    public Date getDateCmd() {
+        return DateCmd;
+    }
+
+    public String getEtat() {
+        return Etat;
     }
 }

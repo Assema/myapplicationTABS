@@ -9,7 +9,7 @@
         app:showAsAction="never" />
 
     <item android:id="@+id/action_retour"
-        android:icon="@drawable/ic_action_av_fast_rewind"
+        android:icon="@drawable/ic_action_navigation_arrow_back"
         android:title="action_retour"
         app:showAsAction ="always"
         />
@@ -23,7 +23,14 @@
 
     <item android:id="@+id/notification"
         app:showAsAction="always"
-        android:icon="@drawable/ic_action_toggle_star"
+        android:icon="@drawable/ic_action_social_notifications"
         android:title="Notification"
+        />
+
+    <item android:id="@+id/SuivreCommande"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_navigation_arrow_back"
+        android:title="Suivre commande"
+
         />
 </menu>

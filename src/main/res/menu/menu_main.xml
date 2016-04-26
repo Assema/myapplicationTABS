@@ -21,7 +21,27 @@
 
     <item android:id="@+id/notification"
         app:showAsAction="always"
-        android:icon="@drawable/ic_action_toggle_star"
-        android:title="Notification"
+        android:icon="@drawable/ic_action_social_notifications_off"
+        android:title="OFF"
+
                                      />
+
+
+    <item android:id="@+id/SuivreCommande"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_navigation_arrow_back"
+        android:title="Suivre commande"
+
+        />
+
+
+
+    <item
+        android:id="@+id/myswitch"
+        android:title=" Notification On/Off"
+        app:showAsAction="always"
+        app:actionLayout="@layout/switch_layout"
+        />
+
+
 </menu>

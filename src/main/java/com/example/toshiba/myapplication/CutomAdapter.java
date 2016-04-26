@@ -94,11 +94,11 @@ public class CutomAdapter extends BaseAdapter implements Filterable {
         }
         ImageView coverIcon = (ImageView) convertView.findViewById(R.id.coverIcon);
         TextView nom = (TextView) convertView.findViewById(R.id.nom);
-        TextView categorie = (TextView) convertView.findViewById(R.id.categorie);
+        // TextView categorie = (TextView) convertView.findViewById(R.id.categorie);
         TextView prix= (TextView) convertView.findViewById(R.id.prix);
         coverIcon.setImageResource(ProduitList.get(position).getCover1());
         nom.setText(ProduitList.get(position).getNom());
-        categorie.setText(ProduitList.get(position).getCategorie());
+//        categorie.setText(ProduitList.get(position).getCategorie());
 
         String pri=Float.toString(ProduitList.get(position).getPrix());
         prix.setText(pri+" DA");
@@ -131,8 +131,8 @@ public class CutomAdapter extends BaseAdapter implements Filterable {
 
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
-             Produit produit;
-              listFilter = new ArrayList<Produit>();
+            Produit produit;
+            listFilter = new ArrayList<Produit>();
             FilterResults filterResults = new FilterResults();
             // véirifer si le texte n'est pas vide
             if (constraint != null && constraint.length() > 0) {

@@ -1,47 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <CheckBox
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox2"
-        android:checked="false" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="nom"
-            android:id="@+id/nom" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="categorie"
-            android:id="@+id/categorie" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="prix"
-            android:id="@+id/prix" />
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_weight="1">
 
 
 
 
-        android:id="@+id/coverIcon" />
-</LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Nom"
+                    android:textSize="@dimen/textSize3"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_alignParentTop="true"
+
+                    />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Prix"
+                    android:layout_below="@+id/Nom"
+                    android:layout_alignLeft="@+id/Nom"
+                    android:layout_alignStart="@+id/Nom" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Quantity"
+                        android:layout_alignBottom="@+id/editText"
+                        android:layout_alignLeft="@+id/Prix"
+                        android:layout_alignStart="@+id/Prix" />
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText"
+                        android:layout_below="@+id/Prix"
+                        android:layout_toRightOf="@+id/Quantity"
+                        android:layout_toEndOf="@+id/Quantity" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Taille"
+                        android:layout_alignBottom="@+id/tail"
+                        android:layout_alignLeft="@+id/Quantity"
+                        android:layout_alignStart="@+id/Quantity" />
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tail"
+                        android:layout_below="@+id/Quantity"
+                        android:layout_toRightOf="@+id/Taille"
+                        android:layout_toEndOf="@+id/Taille" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Pointure"
+                        android:layout_alignBottom="@+id/point"
+                        android:layout_alignLeft="@+id/Taille"
+                        android:layout_alignStart="@+id/Taille" />
+
+                    <TextView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/point"
+                        android:layout_below="@+id/Taille"
+                        android:layout_toRightOf="@+id/Pointure"
+                        android:layout_toEndOf="@+id/Pointure" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:id="@+id/coverIcon"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

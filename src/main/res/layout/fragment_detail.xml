@@ -9,82 +9,143 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.toshiba.myapplication.Detail2Activity">
+    tools:context="com.example.toshiba.myapplication.Detail2Activity"
+    android:background="#ffffff">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/coverImage"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/Ajouter"
-        android:layout_alignEnd="@+id/Ajouter"
-        android:layout_marginRight="34dp"
-        android:layout_marginEnd="34dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/NomText"
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/layout1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="8dp"
-        android:layout_below="@+id/coverImage"/>
+        android:background="#ffffff">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/coverImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/PrixText"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_alignTop="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prix: "
-        android:visibility="invisible"
-        android:id="@+id/textView"
-
-        android:layout_below="@+id/TypeConsommateurText"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
 
+        android:background="#ffffff"
+        android:layout_below="@+id/layout1">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/NomText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIX :"
+            android:id="@+id/TextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/NomText" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PrixText"
+            android:layout_toRightOf="@+id/NomText"
+            android:layout_toEndOf="@+id/NomText"
+            android:layout_below="@+id/NomText" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAILLE :    "
+            android:id="@+id/textView6"
+            android:layout_below="@+id/TextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/PrixText"
+            android:layout_toEndOf="@+id/PrixText"
+            android:layout_below="@+id/PrixText" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textCategorie"
-        android:layout_below="@+id/NomText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POINTURE:    "
+            android:id="@+id/textView7"
+            android:layout_below="@+id/spinner5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TypeConsommateurText"
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner6"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
 
-        android:layout_below="@+id/textCategorie"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COULEUR :    "
+            android:id="@+id/textView8"
+            android:layout_below="@+id/spinner6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner7"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignLeft="@+id/spinner6"
+            android:layout_alignStart="@+id/spinner6" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Ajouter"
-        android:text="Ajouter "
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MATIERE"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/spinner7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/PrixText"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner8"
+            android:layout_below="@+id/spinner7"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
 
-
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ajouter"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/spinner8"
+            android:layout_below="@+id/spinner8"
+            android:background="#ffffff"
+            />
+    </RelativeLayout>
 </RelativeLayout>

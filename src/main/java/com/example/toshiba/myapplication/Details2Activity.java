@@ -19,7 +19,8 @@ public class Details2Activity extends AppCompatActivity {
         Configuration config = getResources().getConfiguration();
         if ((config.orientation ==
                 Configuration.ORIENTATION_LANDSCAPE)
-                && (config.smallestScreenWidthDp >= 600)) {
+                &&(config.smallestScreenWidthDp>=600))
+        {
             finish();
         } else {
             setContentView(R.layout.activity_details2);
@@ -44,6 +45,16 @@ public class Details2Activity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu_detail, menu);
+
+        final MenuItem notif=menu.findItem(R.id.notification);
+        if(notif.getTitle().equals("ON"))
+        {
+            notif.setIcon(R.drawable.ic_action_social_notifications);
+        }
+        else
+        {
+            notif.setIcon(R.drawable.ic_action_social_notifications_off);
+        }
 
         return super.onCreateOptionsMenu(menu);
 

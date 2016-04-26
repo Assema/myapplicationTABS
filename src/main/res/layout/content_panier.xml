@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.toshiba.myapplication.PanierActivity"
-    tools:showIn="@layout/activity_panier">
+    tools:showIn="@layout/activity_panier"
+    android:background="#ffffff">
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,23 +27,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/supprimer"
-                android:layout_above="@+id/linearLayout"
-                android:layout_alignRight="@+id/linearLayout"
-                android:layout_alignEnd="@+id/linearLayout"
-                android:layout_marginRight="141dp"
-                android:layout_marginEnd="141dp"
-                android:src="@drawable/ic_supprimer" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageButton2"
-                android:src="@drawable/ic_modifier" />
-
         </LinearLayout>
 
         <ListView
@@ -54,18 +38,64 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="totale"
-                android:id="@+id/totale" />
+                android:text="Totale : "
+                android:id="@+id/totale"
+                android:textSize="@dimen/textSize2"
+                android:textStyle= "bold"
+                android:layout_below="@+id/listView2"
 
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Totale"
+                android:id="@+id/tot"
+                android:textSize="@dimen/textSize3"
+                android:textStyle= "bold"
+                android:layout_below="@+id/listView2"
+                android:layout_toRightOf="@+id/totale"
+                android:layout_toEndOf="@+id/totale"
+
+
+                android:layout_weight="1"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+
+                />
+
+            <!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:textStyle="bold"
+                android:id="@+id/button"
+                android:onClick="validerCommande"
+                android:background="@color/RoseClairt"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_gravity="right"
+            />
+-->
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Valider" />
+                android:id="@+id/imageButton"
+                android:onClick="validerCommande"
+                android:background="#ffffff" />
+
+
+
         </LinearLayout>
 
     </LinearLayout>
